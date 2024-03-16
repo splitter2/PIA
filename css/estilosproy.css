@@ -1,0 +1,85 @@
+/* Tu CSS existente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87ceeb; /* Color cielo de fondo */
+}
+h1{
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.alinear_flex{
+    display:flex;
+    justify-content: center;
+}
+
+.left-section, .right-section {
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+    color: #000; /* Detalles en negro */
+}
+
+p {
+    color: #333;
+    text-align:center;
+   
+}
+
+.left-section {
+    border-right: 5px solid #008000; /* Detalles en verde */
+}
+
+.right-section {
+    border-left: 5px solid #ffcc00; /* Detalles en amarillo */
+}
+
+.left-section img,
+.right-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Nuevos estilos para la sección principal */
+.main p {
+    margin-bottom: 20px; /* Separación entre párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+.main img {
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Separación entre imágenes */
+}
+
+.main img:nth-child(odd) {
+    float: left; /* Alternar la posición de las imágenes impares a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.main img:nth-child(even) {
+    float: right; /* Alternar la posición de las imágenes pares a la derecha */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
